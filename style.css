@@ -1,0 +1,192 @@
+@font-face {
+  font-family: fastfast-font;
+  src: url(../fonts/topsh___.otf);
+}
+
+:root {
+  --color: #f4f4f4;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: var(--color);
+  /* outline: 1px solid red; */
+}
+
+.content {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+/* left side */
+
+.left-side {
+  background-image: url(./images/fastcar.jpg);
+  background-position: center;
+  background-size: auto;
+  background-repeat: no-repeat;
+  width: 40vw;
+}
+
+.logo {
+  text-align: center;
+  font-family: fastfast-font;
+  margin: 30vh 0 80px;
+  font-size: 7vh;
+  color: var(--color);
+  text-shadow: 10px 10px 10px #000000;
+  transform: rotate(-3deg);
+}
+/* right side */
+
+.right-side {
+  width: 60vw;
+  background-color: #060608;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+.example-text1 {
+  font-weight: 500;
+  width: 90%;
+  font-size: 2rem;
+  padding-left: 3vw;
+}
+
+.example-text2 {
+  font-weight: 1000;
+  font-size: 2rem;
+  padding: 2vw 0;
+  padding-left: 3vw;
+}
+
+.form {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  opacity: 50%;
+  box-shadow: 0 10px 20px -2px rgb(22, 22, 22);
+  padding: 3vw;
+}
+
+.input {
+  display: flex;
+  flex-flow: column wrap;
+  width: 49%;
+  text-transform: uppercase;
+  gap: 1rem;
+  color: var(--color);
+  font-size: 1.2rem;
+}
+
+input {
+  height: 3vh;
+  background-color: transparent;
+  border: 1px solid #f4f4f4;
+  border-radius: 10vh;
+  padding-left: 1vh;
+  font-size: 1.5rem;
+}
+
+button {
+  background-color: rgba(0, 0, 0, 0);
+  color: var(--color);
+  font-weight: 700;
+  font-size: 1.2em;
+  border: 2px solid var(--color);
+  border-radius: 10vh;
+  padding: 10px 40px;
+  margin: 40px 0;
+  padding: 1.5vw;
+  font-weight: 1000;
+}
+
+button:hover {
+  background-color: #f4f4f4;
+  color: black;
+}
+
+.left-button {
+  padding-left: 3vw;
+  font-size: 1.5rem;
+}
+
+.left-log-in {
+  padding-left: 3vw;
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .content {
+    flex-flow: column;
+    height: auto;
+    text-align: center;
+  }
+  .left-side {
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    background-size: 100vw;
+  }
+  .logo {
+    margin: 3vh 0 80px;
+    width: 100vw;
+    position: static;
+    gap: 10px;
+  }
+  .right-side {
+    width: auto;
+    height: auto;
+  }
+
+  .form {
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+  .input {
+    text-align: left;
+    width: auto;
+    font-size: 0.9em;
+    justify-content: center;
+    align-items: center;
+  }
+  input {
+    font-size: 0.9rem;
+    height: 1.5rem;
+    width: 70vw;
+  }
+  .button,
+  .log-in {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0px;
+  }
+  button {
+    margin-bottom: 0px;
+    width: 60vw;
+    padding: 10px 5px;
+  }
+}
+
+.example-text1 {
+  width: 100%;
+}
+
+.left-button {
+  padding-left: 3vw;
+  font-size: 1rem;
+  padding-bottom: 3vh;
+}
+
+.left-log-in {
+  padding-left: 3vw;
+  font-size: 1rem;
+}
